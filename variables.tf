@@ -9,7 +9,7 @@ variable "amis_primary_owners" {
 
 variable "amis_os_map_regex" {
   description = "Map of regex to search amis"
-  type = "map"
+  type = map
 
   default = {
     ubuntu       = "^ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-.*"
@@ -46,7 +46,7 @@ variable "amis_os_map_regex" {
 
 variable "amis_os_map_owners" {
   description = "Map of amis owner to filter only official amis"
-  type = "map"
+  type = map
    default = {
       ubuntu       = "099720109477" #CANONICAL
       ubuntu-14.04 = "099720109477" #CANONICAL
